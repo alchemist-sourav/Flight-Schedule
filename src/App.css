@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.flight-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+  max-width: 420px;
+  width: 100%;
+  color: #111236; /* Skyscanner dark color */
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.flight-card:hover {
+  transform: translateY(-5px);
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  background: linear-gradient(90deg, #0062E3, #0770E3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-subtitle {
+  font-size: 14px;
+  color: #68697f;
+  margin: 0;
+  font-weight: 500;
+}
+
+.calendar-wrapper {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 0 4px 14px rgba(37, 32, 31, 0.05);
+  margin-bottom: 24px;
+  border: 1px solid #e1e3e5;
+}
+
+.selected-date-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f0f3f5;
+  padding: 16px 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  border-left: 4px solid #0062E3;
+}
+
+.date-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #68697f;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.date-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111236;
+}
+
+.action-section {
+  display: flex;
+  justify-content: stretch;
+}
+
+.action-section button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 98, 227, 0.3);
+}
+
+.action-section button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 98, 227, 0.4);
+}
